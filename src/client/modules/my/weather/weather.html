@@ -1,0 +1,46 @@
+<template>
+    <template if:true={error}>
+      Some error occurred!
+    </template>
+    <template if:false={error}>
+      <article class="slds-card">
+        <div class="slds-card__header slds-grid">
+          <header class="slds-media slds-media_center slds-has-flexi-truncate">
+            <div class="slds-media__figure">
+              <span class="slds-icon_container slds-icon-standard-account" title="Weather Card">
+                <svg class="slds-icon slds-icon_small" aria-hidden="true">
+                  <use xlink:href="/assets/icons/standard-sprite/svg/symbols.svg#account"></use>
+                </svg>
+                <span class="slds-assistive-text">Weather Card</span>
+              </span>
+              </div>
+            <div class="slds-media__body">
+              <h2 class="slds-card__header-title">
+                <a href="#" class="slds-card__header-link slds-truncate" title="Weather">
+                  <!-- <span>Weather for {    currentweather.place}</span> -->
+                </a>
+              </h2>
+            </div>
+            <div class="slds-no-flex">
+              <button class="slds-button slds-button_neutral">Save</button>
+            </div>
+          </header>
+        </div>
+        <div class="slds-card__body slds-card__body_inner">
+            <ul>
+                <!-- <li>{currentweather.location}</li>
+                <li>{currentweather.tempC}</li>
+                <li>{currentweather.humidity</li>
+                <li>{currentweather.url}</li> -->
+            </ul>
+        </div>
+        <footer class="slds-card__footer">
+            Last checked {timeSecondsAgo} seconds ago
+            <!-- 
+              <a class="slds-card__footer-action" href="#">View All<span class="slds-assistive-text">Accounts</span>
+            </a> -->
+        </footer>
+      </article>  
+    </template>
+    
+</template>
