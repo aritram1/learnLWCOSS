@@ -4,7 +4,7 @@ import { helper, log, DEFAULT } from './weatherhelper.js';
 export default class Weather extends LightningElement{
     
     //define properties
-    currentWeather = Object.assign({}, DEFAULT);
+    @track currentWeather;
     @track cached;
     @track error;
 
