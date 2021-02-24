@@ -4,7 +4,14 @@ import { helper, log, DEFAULT } from './weatherhelper.js';
 export default class Weather extends LightningElement{
     
     //define properties
-    currentWeather = Object.assign({}, DEFAULT);
+    // @track place = 'New Town';
+    // @track location;
+    // @track tempC;
+    // @track humidity;
+    // @track url;
+    // @track time;
+    @track currentWeather={};// = Object.assign({}, DEFAULT);
+
     @track cached;
     @track error;
 
