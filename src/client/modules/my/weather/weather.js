@@ -1,54 +1,79 @@
 import { LightningElement, track, api } from 'lwc';
 import { helper, log, DEFAULT } from './weatherhelper.js';
+const WEATHER_URL = 'https://api.openweathermap.org/data/2.5/weather?q=';
+const WEATHER_API = '&appid=dc14a4d0c2ab97c643acd3e8447fd074';
 
 export default class Weather extends LightningElement{
-    
+    //l = this.log;
     //define properties
-    @track currentWeather;
+    @track currentWeather={};
     @track cached;
     @track error;
+    response = {};
 
     //getters
     get timeSecondsAgo(){
         log(`timesecondsAgo called!`);
-        return Date.now() - this.currentWeather.lastUpdated || Date.now;
+        let timeinMS = Date.now() - this.currentWeather.lastUpdated || Date.now;
+        return timeinMS/1000;
     }
 
     //constructor
     constructor(){
         super();
-        console.log('hi');
-        log(`constructor called!`)
-        log('->' + JSON.stringify(DEFAULT));
         this.currentWeather = Object.assign({}, DEFAULT);
-        console.log(this.currentWeather.lastUpdated);
         this.cached = false;
     }
 
     //connectedCallback
     connectedCallback(){
-        log(`connected called!`)
-        if(!this.cached){
-            this.fetchWeather();
-        }
-    }
-
-    fetchWeather(){
-        let url = `api.openweathermap.org/data/2.5/weather?q=${this.currentWeather.location}&appid=dc14a4d0c2ab97c643acd3e8447fd074`;
-        fetch('GET', 'url')
-        .then((result) => {
-            //log(JSON.stringify(result));
-            result.json()
+        setInterval(()=>{
+            let city = this.currentWeather.city;
+            let url = WEATHER_URL + city + WEATHER_API; //In the form [api.openweathermap.org/q=][cityName][&appid=<appId>]
+            fetch(url)
+            .then((result) => {
+                console.dir(result);
+                return result.json();
+            })
             .then(data=>{
                 log('inside fetch url success');
-                log(data);
+                log(JSON.stringify(data));
+                this.response = data;
+                let a = Object.assign({}, DEFAULT, data);
+                console.log(a);
+                this.currentWeather = Object.assign({}, DEFAULT, data);
+            })
+            .catch((error) => {
+                this.error = error;
+                log('inside error');
+                log(error);
             });
-        })
-        .catch((error) => {
-            this.error = error;
-            log('inside error');
-        });
+        },5000);
+        
     }
+
+    // fetchWeather(){
+    //     console.log('hi');
+    //     let city = this.currentWeather.city;
+    //     let url = WEATHER_URL + city + WEATHER_API; //In the form [api.openweathermap.org/q=][cityName][&appid=<appId>]
+    //     fetch(url)
+    //     .then((result) => {
+    //         console.dir(result);
+    //         return result.json();
+    //     })
+    //     .then(data=>{
+    //         log('inside fetch url success');
+    //         log(data);
+    //         let a = Object.assign({}, DEFAULT, data);
+    //         console.log(a);
+    //         this.currentWeather = Object.assign({}, DEFAULT, data);
+    //     })
+    //     .catch((error) => {
+    //         this.error = error;
+    //         log('inside error');
+    //         log(error);
+    //     });
+    // }
 
 
 }
