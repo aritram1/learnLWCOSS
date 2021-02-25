@@ -29,19 +29,19 @@
         <div class="slds-card__body slds-card__body_inner">
             <ul>
                 <li><a href={currentWeather.url}>{currentWeather.city}</a></li>
-                <li>{currentWeather.tempMaxC}</li>
-                <li>{currentWeather.tempMinC}</li>
-                <li>{currentWeather.humidity}</li>
-                
-                <li></li>
+                <li>{currentWeather.tempMaxC} &#x2103;</li>
+                <li>{currentWeather.tempMinC} &#x2109;</li>
+                <li>{currentWeather.humidity} &#x25;</li>
+                <li>{currentWeather.pressure} Atm Pressure</li>
+                <li>Position : {currentWeather.lat}, {currentWeather.lon}</li>
+                <li>{currentWeather.windSpeed} Knot</li>
+                <li>{currentWeather.localTime} [LOCAL TIME]</li>
+                <li>{currentWeather.sunrise} AM</li>
+                <li>{currentWeather.sunset} PM</li>
             </ul>
         </div>
         <footer class="slds-card__footer">
             Last checked {timeSecondsAgo} seconds ago
-            <!-- 
-              <a class="slds-card__footer-action" href="#">View All<span class="slds-assistive-text">Accounts</span>
-            </a> -->
-            {response}
         </footer>
       </article>  
     </template>
