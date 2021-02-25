@@ -2,6 +2,7 @@ import { LightningElement, track, api } from 'lwc';
 import { log, l, WeatherSchema, DefaultWeather, ResponseParser, Cities } from './weatherhelper.js';
 const WEATHER_URL = 'https://api.openweathermap.org/data/2.5/weather?q=';
 const WEATHER_API = '&appid=dc14a4d0c2ab97c643acd3e8447fd074';
+const DELAY = 2000; //in ms
 const faker = require('faker');
 export default class Weather extends LightningElement{
     @track currentWeather;
@@ -41,7 +42,7 @@ export default class Weather extends LightningElement{
                     city = next;
                     if(i != 0){
                         console.log(`After ${i} attempts resolved to : ${city}`);
-                        this.attempts = i+1;
+                        this.attempts = i;
                     }
                     break;
                 }else{
@@ -66,12 +67,12 @@ export default class Weather extends LightningElement{
                 this.error = error;
                 //throw error;
             });
-        },500);
+        },DELAY);
 
-        let btnSv = document.getElementById('btnSv');
-        btnSv.addEventListener('click', ()=>{
-            clearInterval(this.intervalId);
-        });
+        // let btnSv = document.getElementById('btnSv');
+        // btnSv.addEventListener('click', ()=>{
+        //     clearInterval(this.intervalId);
+        // });
         
     }
 
