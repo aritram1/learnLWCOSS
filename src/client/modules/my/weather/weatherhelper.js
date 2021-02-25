@@ -34,7 +34,6 @@ export const WeatherSchema = {
     'localTime' : '',
     'sunrise' : '',
     'sunset' : '',
-    'lastUpdated' : Date.now(),
     'url' : ''
 }
 export class ResponseParser{
@@ -61,14 +60,13 @@ export class ResponseParser{
             'tempMinC' : (temp_max-273).toLocaleString("en-US", { maximumFractionDigits: 2, minimumFractionDigits: 2 }),
             'tempMaxC' : (temp_max-273).toFixed(2), //Second way of doing it
             'humidity' : humidity,
-            'pressure' : pressure,
+            'pressure' : (pressure/1000).toFixed(2),
             'lat' : lat,
             'lon' : lon,
             'windSpeed' : windSpeed,
             'localTime' : timezone,
             'sunrise' : sunrise,
             'sunset' : sunset,
-            'lastUpdated' : Date.now(),
             'url' : ''
         }
     }

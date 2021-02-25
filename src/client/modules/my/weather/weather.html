@@ -1,17 +1,15 @@
 <template>
     <template if:true={error}>
-      Some error occurred!
+      Error occurred : {error}
     </template>
+    
     <template if:false={error}>
       <article class="slds-card">
         <div class="slds-card__header slds-grid">
           <header class="slds-media slds-media_center slds-has-flexi-truncate">
             <div class="slds-media__figure">
               <span class="slds-icon_container slds-icon-standard-account" title="Weather Card">
-                <svg class="slds-icon slds-icon_small" aria-hidden="true">
-                  <use xlink:href="/assets/icons/standard-sprite/svg/symbols.svg#account"></use>
-                </svg>
-                <span class="slds-assistive-text">Weather Card</span>
+                  <span class="slds-assistive-text">Weather Card</span>
               </span>
               </div>
             <div class="slds-media__body">
@@ -22,26 +20,29 @@
               </h2>
             </div>
             <div class="slds-no-flex">
-              <button class="slds-button slds-button_neutral">Save</button>
+              <button class="slds-button slds-button_neutral" id="btnSv">Save</button>
             </div>
           </header>
         </div>
         <div class="slds-card__body slds-card__body_inner">
-            <ul>
-                <li><a href={currentWeather.url}>{currentWeather.city}</a></li>
-                <li>{currentWeather.tempMaxC} &#x2103;</li>
-                <li>{currentWeather.tempMinC} &#x2109;</li>
-                <li>{currentWeather.humidity} &#x25;</li>
-                <li>{currentWeather.pressure} Atm Pressure</li>
-                <li>Position : {currentWeather.lat}, {currentWeather.lon}</li>
-                <li>{currentWeather.windSpeed} Knot</li>
-                <li>{currentWeather.localTime} [LOCAL TIME]</li>
-                <li>{currentWeather.sunrise} AM</li>
-                <li>{currentWeather.sunset} PM</li>
-            </ul>
+          <ul>
+            <li><a href={currentWeather.url}>{currentWeather.city}</a></li>
+            <li>{currentWeather.tempMaxC} &#x2103;</li>
+            <li>{currentWeather.tempMinC} &#x2109;</li>
+            <li>{currentWeather.humidity} &#x25;</li>
+            <li>{currentWeather.pressure} Atm Pressure</li>
+            <li>Coordinate : {currentWeather.lat}, {currentWeather.lon}</li>
+            <li>{currentWeather.windSpeed} Knot</li>
+            <!-- 
+            <li>{currentWeather.localTime} [LOCAL TIME]</li>
+            <li>{currentWeather.sunrise} AM</li>
+            <li>{currentWeather.sunset} PM</li> 
+            -->
+          </ul>
         </div>
         <footer class="slds-card__footer">
-            Last checked {timeSecondsAgo} seconds ago
+            Last checked {timeSecondsAgo} seconds ago ...
+            <template if:true = {attempts}> <div>After {attempts} times resolved to : {currentWeather.city} </div></template>
         </footer>
       </article>  
     </template>
