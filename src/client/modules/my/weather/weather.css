@@ -1,10 +1,10 @@
-* {
+:host {
   padding: 2px;
   margin : 2px;
   color : green;
 }
 .a-card{
-  color: white;
+  color: black;
 }
 .a-card__errordiv{
   color : red;
@@ -13,16 +13,16 @@
     color : blue;
 }
 .a-card__header{
-  color : blue;
+  color : teal;
 }
 .a-card__headeritem{
-  color : blue;
+  color : grey;
 }
 .a-card__headerbtn{
-  color : blue;
+  color : purple;
 }
 .a-card__content{
-  color : blue;
+  color : orange;
 }
 .a-card__contentLeft{
   color : blue;
