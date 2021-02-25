@@ -1,37 +1,37 @@
-<template>
+<!--
+  BluePrint
   <article class="a-card">
     <div class="a-card__errordiv">Error occurred : {error}</div>
-    <div class="a-card__successdiv"> 
+    <div class="a-card__successdiv">  -->
       <!---------------------------------------------------- CARD HEADER -------------------------------------------------->
-      <div class="a-card__header">
+      <!-- <div class="a-card__header">
         <span class="a-card__headeritem">Weather for {currentWeather.location}</span>
         <span class="a-card__headeritem">
           <button class="a-card__headerbtn">Save</button>
         </span>
-      </div>
+      </div> -->
       <!---------------------------------------------------- CARD CONTENT -------------------------------------------------->
-      <div class="a-card__content">
+      <!-- <div class="a-card__content">
         <span class="a-card__contentLeft">
-          City : {currentWeather.city} </br>
-          Temp feels like : {currentWeather.feels_like} &#x2103
-            ({currentWeather.tempMinC} &#x2103; ~ {currentWeather.tempMaxC} &#x2103;)</br>
-          Pressure : {currentWeather.pressure} Atm </br>
-          Windspeed : {currentWeather.windSpeed} mph </br>
-          Position : ({currentWeather.lat}, {currentWeather.lon}) </br>
-          Humidity : {currentWeather.humidity} &#x25; </br>
+          {currentWeather.city}
+          {currentWeather.tempMinC}
+          {currentWeather.tempMaxC}
+          {currentWeather.pressure}
+          {currentWeather.windSpeed}
+          {currentWeather.lat}
+          {currentWeather.lon}
         </span>
-        <span class="a-card__contentRight">
+        <span class="a-card__contentRight"></span>
           <img clas="a-card__contentImage" src="lwc.png"/>
           <div class="a-card__contentImageCaption"></div>
         </span>
-      </div>
+      </div> -->
       <!---------------------------------------------------- CARD FOOTER -------------------------------------------------->
-      <div class="a-card__footer">
+      <!-- <div class="a-card__footer">
         <div class="a-card__footerItem">
-          <div>Last checked {timeSecondsAgo} seconds ago ... After {attempts} times resolved to : {currentWeather.city}</div>
+          </div>Last checked {timeSecondsAgo} seconds ago ... After {attempts} times resolved to : {currentWeather.city}</div>
         </div>
-      </div>
+      </div> -->
       <!---------------------------------------------------- CARD FOOTER -------------------------------------------------->
-    </div>
-  </article>
-</template>
+    <!-- </div>
+  </article> -->

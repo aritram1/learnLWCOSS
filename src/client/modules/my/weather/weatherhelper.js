@@ -26,6 +26,7 @@ export const WeatherSchema = {
     'location' : '',
     'tempMinC' : 0,
     'tempMaxC' : 0,
+    'feels_like' : 0,
     'humidity' : 0,
     'pressure' : 0,
     'lat' : 0.0,
@@ -57,8 +58,9 @@ export class ResponseParser{
             'id' : id,
             'city' : city,
             'location' : `${city}, ${country}`,
-            'tempMinC' : (temp_max-273).toLocaleString("en-US", { maximumFractionDigits: 2, minimumFractionDigits: 2 }),
+            'tempMinC' : (temp_min-273).toLocaleString("en-US", { maximumFractionDigits: 2, minimumFractionDigits: 2 }),
             'tempMaxC' : (temp_max-273).toFixed(2), //Second way of doing it
+            'feels_like' : (feels_like-273).toFixed(2),
             'humidity' : humidity,
             'pressure' : (pressure/1000).toFixed(2),
             'lat' : lat,

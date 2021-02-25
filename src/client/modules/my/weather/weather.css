@@ -3,6 +3,9 @@
   margin : 2px;
   color : green;
 }
+div{
+  border: 1px solid teal;
+}
 .a-card{
   color: black;
 }
@@ -20,6 +23,7 @@
 }
 .a-card__headerbtn{
   color : purple;
+  align-self: right;
 }
 .a-card__content{
   color : orange;
