@@ -1,12 +1,16 @@
 <template>
   <article class="wc">
-    <div class="wc--error">Error occurred : {error}</div>
-    <img class="wc--img" alt="alt Image" src="{currentWeather.dayTypeImage}"/>
-    <div class="wc--temperature">{currentWeather.feels_like}</div>
-    <div>
-      <div class=wc--dayType>{currentWeather.dayType} &#x25;</div>
-      <div class="wc--location">{currentWeather.location}</div>
-    </div>
+    <template if:true={error}>
+      <div class="wc--error">Error occurred : {error}</div>
+    </template>
+    <template if:false={error}>
+      <img class="wc--img" alt="alt Image" src={currentWeather.dayTypeImage}/>
+      <div class="wc--temperature">{currentWeather.feels_like}</div>
+      <div>
+        <div class=wc--dayType>{currentWeather.dayType} &#x25;</div>
+        <div class="wc--location">{currentWeather.location}</div>
+      </div>
+    </template>
     <div class="wc--date"> {currentWeather.date}</div>
   </article>
 </template>
