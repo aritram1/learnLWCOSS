@@ -1,48 +1,23 @@
-:host {
-  padding: 2px;
-  margin : 2px;
-  color : green;
-}
+
 div{
-  border: 1px solid teal;
+  border: 1px solid black;
 }
-.a-card{
-  color: black;
+.wc{
+  display: grid;
+  background-color: blue;
 }
-.a-card__errordiv{
-  color : red;
+.wc--error{
+  background-color : red;
 }
-.a-card__successdiv{
-    color : blue;
+.wc--img{
+  background-color : green;
 }
-.a-card__header{
-  color : teal;
+.wc--temperature{
+  background-color : orange;
 }
-.a-card__headeritem{
-  color : grey;
+.wc--location{
+  background-color : grey;
 }
-.a-card__headerbtn{
-  color : purple;
-  align-self: right;
-}
-.a-card__content{
-  color : orange;
-}
-.a-card__contentLeft{
-  color : blue;
-}
-.a-card__contentRight{
-  color : blue;
-}
-.a-card__contentImage{
-  color : blue;
-}
-.a-card__contentImageCaption{
-  color : blue;
-}
-.a-card__footer{
-  color : blue;
-}
-.a-card__footerItem{
-  color : blue;
+.wc--date{
+  background-color : purple;
 }

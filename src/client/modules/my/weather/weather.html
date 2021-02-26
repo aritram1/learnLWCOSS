@@ -1,37 +1,12 @@
 <template>
-  <article class="a-card">
-    <div class="a-card__errordiv">Error occurred : {error}</div>
-    <div class="a-card__successdiv"> 
-      <!---------------------------------------------------- CARD HEADER -------------------------------------------------->
-      <div class="a-card__header">
-        <span class="a-card__headeritem">Weather for {currentWeather.location}</span>
-        <span class="a-card__headeritem">
-          <button class="a-card__headerbtn">Save</button>
-        </span>
-      </div>
-      <!---------------------------------------------------- CARD CONTENT -------------------------------------------------->
-      <div class="a-card__content">
-        <span class="a-card__contentLeft">
-          City : {currentWeather.city} </br>
-          Temp feels like : {currentWeather.feels_like} &#x2103
-            ({currentWeather.tempMinC} &#x2103; ~ {currentWeather.tempMaxC} &#x2103;)</br>
-          Pressure : {currentWeather.pressure} Atm </br>
-          Windspeed : {currentWeather.windSpeed} mph </br>
-          Position : ({currentWeather.lat}, {currentWeather.lon}) </br>
-          Humidity : {currentWeather.humidity} &#x25; </br>
-        </span>
-        <span class="a-card__contentRight">
-          <img clas="a-card__contentImage" src="lwc.png"/>
-          <div class="a-card__contentImageCaption"></div>
-        </span>
-      </div>
-      <!---------------------------------------------------- CARD FOOTER -------------------------------------------------->
-      <div class="a-card__footer">
-        <div class="a-card__footerItem">
-          <div>Last checked {timeSecondsAgo} seconds ago ... After {attempts} times resolved to : {currentWeather.city}</div>
-        </div>
-      </div>
-      <!---------------------------------------------------- CARD FOOTER -------------------------------------------------->
+  <article class="wc">
+    <div class="wc--error">Error occurred : {error}</div>
+    <img class="wc--img" alt="alt Image" src="{currentWeather.dayTypeImage}"/>
+    <div class="wc--temperature">{currentWeather.feels_like}</div>
+    <div>
+      <div class=wc--dayType>{currentWeather.dayType} &#x25;</div>
+      <div class="wc--location">{currentWeather.location}</div>
     </div>
+    <div class="wc--date"> {currentWeather.date}</div>
   </article>
 </template>
