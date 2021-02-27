@@ -25,8 +25,18 @@ export default class Weather extends LightningElement{
     
     connectedCallback(){
         setInterval(()=>{
-            this.city = Math.random(1) > 0.5 ? 'Kolkata' : 'Mumbai';
-            //console.log('hi ' + this.city);
+            let r = Math.random(1);
+            this.city = r < 0.1 ? 'Paris' :
+                        r < 0.2 ? 'Amsterdam' :
+                        r < 0.3 ? 'Delhi' :
+                        r < 0.4 ? 'Oslo' :
+                        r < 0.5 ? 'Houston' :
+                        r < 0.6 ? 'London' :
+                        r < 0.7 ? 'Dubai' :
+                        r < 0.8 ? 'Moscow' :
+                        r < 0.9 ? 'Barcelona' : 'Kolkata';
+                        
+            log('City => ' + this.city);
             let url = WEATHER_URL + this.city + WEATHER_API; //In the form [api.openweathermap.org/q=][cityName][&appid=<appId>]
             fetch(url)
             .then((result) => {

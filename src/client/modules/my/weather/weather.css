@@ -45,8 +45,9 @@
   padding: 5%;
   font-size: 150%;
 }
-.wc--dayType{
+.wc--contentMid.wc--dayType{
   background-color: turquoise;
+  font-size: 200%;
 }
 .wc--location{
   text-align: center;

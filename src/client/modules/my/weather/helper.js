@@ -40,20 +40,16 @@ export class ResponseParser {
             'url' : '',
             'timeZone' : timezone,  
         }
-        console.log('Parsed Response > ' + JSON.stringify(parsedResp));
+        //console.log('Parsed Response > ' + JSON.stringify(parsedResp));
         return parsedResp;
     }
 
     static _process(data){
         let dayTypeImage, dayType, localTime;
 
-        let dayTypes = ['Sunny', 'Snowy', 'Rainy'];
-        let r = Math.floor(Math.random(1)*100%3);
-        dayType = dayTypes[r];
-        if(data.feels_like < 15) dayType = 'Cold' + dayType;
-        if(data.feels_like > 40) dayType = 'Hot' + dayType;
-        if(data.humidity > 60) dayType = dayType + ' humid';
-        
+        if(data.feels_like < 15) dayType = 'Cold day';
+        if(data.feels_like > 40) dayType = 'Sunny day';
+        if(data.humidity > 60) dayType = 'Overcast day';
         dayTypeImage = '../../../resources/images/daytypes/wi-cloudy.svg';
         localTime = Date.now();
 
@@ -65,7 +61,7 @@ export class ResponseParser {
             'location' : `${data.city}, ${data.country}`
         }
         let _p = Object.assign({}, injectedNodes, data);
-        console.log('Processed response >' + JSON.stringify(_p)) ;
+        //console.log('Processed response >' + JSON.stringify(_p)) ;
         return _p;
     }
 }
