@@ -1,34 +1,21 @@
 <template>
-  <div class="container">
+  <!-- <div class="container"> -->
     <article class="wc">
-      <!-- <template if:true={error}> -->
+      <template if:true={error}>
         <div class="wc--error">Error occurred : None {error}</div>
-        <!-- </template> -->
-        <!-- <template if:false={error}> -->
-        
-        <img class="wc--img" alt="alt Image" src={currentWeather.dayTypeImage}/>
-        <div>{currentWeather.humidity} &#x25; || {currentWeather.tempMinC} ~ {currentWeather.tempMaxC};</div>
+      </template>
+      <template if:false={error}>
+        <div class="wc--img"><img alt="alt Image" src={currentWeather.dayTypeImage}/></div>
+        <div class="wc--header">Humidity : {currentWeather.humidity}&#x25; || Temperature : {currentWeather.tempMinC}~{currentWeather.tempMaxC}&#x2103;</div>
         <div class="wc--content">
-          <div class="wc--temperature">{currentWeather.feels_like} &#8451;</div> 
-          <div>
-            <div class="wc--dayType">{currentWeather.dayType}</div>
-            <div class="wc--location">{currentWeather.location}</div>
+          <div class="wc--temperature">{currentWeather.feels_like}&#8451;</div> 
+          <div class="wc--contentMid">
+            <div class="wc-dayType"> {currentWeather.dayType}</div>
+            <div class="wc-location"> {currentWeather.location}</div>
           </div>
           <div class="wc--date"> {currentWeather.date}</div>
         </div>
-        <!-- </template> -->
+      </template>
     </article>
-  </div>
+  <!-- </div> -->
 </template>
-<!-- <html>
-  <body>
-    <span class="wc--conte1nt">
-      <span class="wc--temperat1ure">{currentWeather.feels_like}</span>
-      <span>
-        <div class=wc--dayTy1pe>{currentWeather.dayType} &#x25;</div>
-        <div class="wc--loca1tion">{currentWeather.location}</div>
-      </span>
-      <span class="wc--dat1e"> {currentWeather.date}</span>
-    </span>
-  </body>
-</html> -->

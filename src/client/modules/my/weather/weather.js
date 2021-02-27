@@ -17,7 +17,9 @@ export default class Weather extends LightningElement{
             location : 'Kolkata, India',
             date : new Date().getDate(),
             humidity: 50,
-            dayTypeImage : '../../../resources/images/daytypes/wi-cloudy.svg'
+            dayTypeImage : '../../../resources/images/daytypes/wi-cloudy.svg',
+            tempMinC : 25,
+            tempMaxC : 45
         }
     }
     
@@ -47,24 +49,6 @@ export default class Weather extends LightningElement{
     }
     
     // fetchData(){
-        // this.city = Math.random(1) > 0.5 ? 'Kolkata' : 'Mumbai';
-        // //console.log('hi ' + this.city);
-        // let url = WEATHER_URL + this.city + WEATHER_API; //In the form [api.openweathermap.org/q=][cityName][&appid=<appId>]
-        // fetch(url)
-        // .then((result) => {
-        //     //console.dir(result);
-        //     return result.json();
-        // })
-        // .then(data=>{
-        //     log(`Data received for ${this.city} as ${JSON.stringify(data)}`);
-        //     log('data' + ResponseParser.parse(data));
-        //     this.currentWeather = ResponseParser.parse(JSON.stringify(data)); //Or Object.assign({}, this.currentWeather, data);
-        //     this.error = undefined;
-        // })
-        // .catch((error) => {
-        //     console.log(`Encountered error during fetch : ${error}`);
-        //     this.error = error;
-        //     //throw error;
-        // });
+        
     // }
 }

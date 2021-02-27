@@ -1,39 +1,62 @@
-  
-*{
-  border: 1px solid black;
-}
 .container{
-  /* border: 2px solid white; */
-  /* padding: 20px; */
-  /* display :grid; */
+
+  background-color:white;
+  padding: 20px;
+  border-top-right-radius: 20%;
+
+  /* border-radius  : 2.5%; */
 }
 .wc{
-  /* border-radius:1.5%; */
+  background-color: white;
+  align-content: center;
+  border-radius: 1.5% ;
 }
 .wc--error{
-  /* background-color : red; */
+  background-color : red;
+  font-size: 200%;
 }
-.wc--img{
-  /* background-color : white;
-  height: 60%;
-  width: 60%; */
-  /* grid-column-start: 1; grid-column-end: 3; */
+.wc--img > img{
+  background-color :white;
+  width: 50%;
+  padding-left: 25%;
+}
+.wc--header{
+  text-align: center;
+  background-color: wheat;
+  padding : 3%;
+  font-size: 150%;
 }
 .wc--content{
-  
-  /* background-color: orange;
-  height: 20px; */
-  display: inline-grid;
-  
-  /*grid-template-columns: auto auto auto;*/
+  display: flex;
+  padding-top: 1px;
 }
 .wc--temperature{
-  /* background-color : teal;
-  text-align: left; */
+  padding: 6%;
+  background-color : black;
+  color: white;
+  font-size: 200%;
+  border-bottom-left-radius: 20%;
+}
+.wc--contentMid{
+  flex-grow: 9;
+  text-align: center;
+  color: white;
+  background-color: teal;
+  padding: 5%;
+  font-size: 150%;
+}
+.wc--dayType{
+  background-color: turquoise;
 }
 .wc--location{
-  /* background-color : grey; */
+  text-align: center;
+  
 }
 .wc--date{
-  /* background-color : purple; */
+  background-color : hsl(177, 57%, 61%);
+  color: white;
+  font-size: 300%;
+  text-align: center;
+  padding: 5%;
+  border-bottom-right-radius: 20%;
 }

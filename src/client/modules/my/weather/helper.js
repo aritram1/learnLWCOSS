@@ -27,9 +27,9 @@ export class ResponseParser {
             'id' : id,
             'city' : city,
             'country' : country,
-            'tempMinC' : (temp_min-273).toFixed(2),
-            'tempMaxC' : (temp_max-273).toFixed(2),
-            'feels_like' : (feels_like-273).toFixed(2),
+            'tempMinC' : (temp_min-273).toFixed(0),
+            'tempMaxC' : (temp_max-273).toFixed(0),
+            'feels_like' : (feels_like-273).toFixed(0),
             'humidity' : humidity,
             'pressure' : (pressure/1000).toFixed(2),
             'lat' : lat,
@@ -47,13 +47,13 @@ export class ResponseParser {
     static _process(data){
         let dayTypeImage, dayType, localTime;
 
-        let dayTypes = ['Sunny', 'Overcast', 'Rainy'];
-        let r = Math.random(1)*100%3;
+        let dayTypes = ['Sunny', 'Snowy', 'Rainy'];
+        let r = Math.floor(Math.random(1)*100%3);
         dayType = dayTypes[r];
-        if(data.humidity > 60) dayType = 'Overcast';
-        if(data.feels_like-273 < 25) dayType = 'Cold';
-        if(data.feels_like-273 > 35) dayType = 'Warm';
-
+        if(data.feels_like < 15) dayType = 'Cold' + dayType;
+        if(data.feels_like > 40) dayType = 'Hot' + dayType;
+        if(data.humidity > 60) dayType = dayType + ' humid';
+        
         dayTypeImage = '../../../resources/images/daytypes/wi-cloudy.svg';
         localTime = Date.now();
 
