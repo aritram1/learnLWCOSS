@@ -1,23 +1,39 @@
-
-div{
+  
+*{
   border: 1px solid black;
 }
+.container{
+  /* border: 2px solid white; */
+  /* padding: 20px; */
+  /* display :grid; */
+}
 .wc{
-  display: grid;
-  background-color: blue;
+  /* border-radius:1.5%; */
 }
 .wc--error{
-  background-color : red;
+  /* background-color : red; */
 }
 .wc--img{
-  background-color : green;
+  /* background-color : white;
+  height: 60%;
+  width: 60%; */
+  /* grid-column-start: 1; grid-column-end: 3; */
+}
+.wc--content{
+  
+  /* background-color: orange;
+  height: 20px; */
+  display: inline-grid;
+  
+  /*grid-template-columns: auto auto auto;*/
 }
 .wc--temperature{
-  background-color : orange;
+  /* background-color : teal;
+  text-align: left; */
 }
 .wc--location{
-  background-color : grey;
+  /* background-color : grey; */
 }
 .wc--date{
-  background-color : purple;
+  /* background-color : purple; */
 }
