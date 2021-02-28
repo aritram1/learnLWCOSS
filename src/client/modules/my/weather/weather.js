@@ -2,7 +2,7 @@ import { LightningElement, track, api } from 'lwc';
 import { ResponseParser, log, l } from './helper.js';
 const WEATHER_URL = 'https://api.openweathermap.org/data/2.5/weather?q=';
 const WEATHER_API = '&appid=dc14a4d0c2ab97c643acd3e8447fd074';
-const DELAY = 2000; //in ms
+const DELAY = 5000; //in ms
 export default class Weather extends LightningElement{
     @track currentWeather = {};
     @track error;
