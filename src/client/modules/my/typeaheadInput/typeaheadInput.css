@@ -4,3 +4,9 @@ div{
 .container{
     background-color: blue
 }
+.typeaheadinput{
+    box-shadow: grey;
+    background-color: teal;
+    height: 20px;
+    width: 100px;
+}
