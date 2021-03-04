@@ -1,5 +1,10 @@
 <template>
     <div id="container">
-        <input type='text' class="typeaheadinput"/>
+        <input type="text" class="typeaheadinput" oninput={handleChange}/>
+        <template if:true={place}>
+            <template for:each={places} for:item="p">
+                <div key={p.id}>{p.name}</div>
+            </template>
+        </template>
     </div>
 </template>

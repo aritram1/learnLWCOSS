@@ -4,11 +4,12 @@ div{
 .container{
     background-color: blue;
     height: 500px;
-    width: 20px;
+    width: 30px;
 }
 .typeaheadinput{
     box-shadow: grey;
     background-color: teal;
     height: 20px;
-    width: 100px;
+    width: 200px;
+    color: white;
 }

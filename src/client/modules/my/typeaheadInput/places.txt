@@ -1,0 +1,300 @@
+Abidjan | Ivory Coast
+ACCRA | Ghana
+Adana | Turkey
+ADDIS ABABA | Ethiopia
+Adelaide | Australia
+Agra | India
+Ahmadabad | India
+Aleppo(Halab) | Syria
+Alexandria | Egypt
+ALGIERS | Algeria
+Allahabad | India
+ALMATY | Kazakhstan
+AMMAN | Jordan
+Amritsar | India
+ANKARA | Turkey
+Anshan | China
+BAGHDAD | Iraq
+Baku | Azerbaijan
+Bandung | Indonesia
+Bangalore | India
+BANGKOK | Thailand
+Baotou | China
+Barcelona | Spain
+Barquisimeto | Venezuela
+Barranquilla | Columbia
+Basrah | Iraq
+BEIJING | China
+BEIRUT | Lebanon
+Belem | Brazil
+BELGRADE | Serbia
+Belo Horizonte | Brazil
+Benghazi | Libya
+Benin | Nigeria
+BERLIN | Germany
+Bhopal | India
+Birmingham | UK
+BOGOTA | Colombia
+BRASILIA | Brazil
+BRAZZAVILLE | Congo B R
+Brisbane | Australia
+BUCHAREST | Romania
+BUDAPEST | Hungary
+BUENOS AIRES | Argentina
+Bursa | Turkey
+Busan | South Korea
+CAIRO | Egypt
+Cali | Colombia
+Campinas | Brazil
+Capetown | South Africa
+CARACAS | Venezuela
+Casablanca | Morocco
+Changchun | China
+Changsha | China
+Changzhou | China
+Chelyabinsk | Russia
+Chengdu | China
+Chennai | India
+Chicago | USA
+Chittagong | Bangladesh
+Chongquin | China
+Ciudad Juarez | Mexico
+CONAKRY | Guinea
+COPENHAGEN | Denmark
+Cordoba | Argentina
+Curitiba | Brazil
+Daegu | South Korea
+Daejon | South Korea
+DAKAR | Senegal
+Dalian | China
+Dallas | USA
+DAMASCUS | Syria
+DAR ES SALAAM | Tanzania
+Datong | China
+DELHI | India
+DHAKA | Bangladesh
+Dnipropetrovsk | Ukraine
+Donetsk | Ukraine
+Douala | Cameroon
+Durban | South Africa
+Ecatepec | Mexico
+Ekaterinburg | Russia
+Faisalabad | Pakistan
+Fortaleza | Brazil
+Foshan | China
+FREETOWN | Sierra Leone
+Fukuoka | Japan
+Fuzhou | China
+Giza | Egypt
+Goiania | Brazil
+Guadalajara | Mexico
+Guangzhou | China
+Guarulhos | Brazil
+GUATAMALA CITY | Guatemala
+Guayaquil | Ecuador
+Guiyang | China
+Gujranwala | Pakistan
+Gwangju | South Korea
+Haiphong | Vietnam
+Hamburg | Germany
+Handan | China
+Hangzhou | China
+HANOI | Vietnam
+Haora | India
+HARARE | Zimbabwe
+Harbin | China
+HAVANA | Cuba
+Hefei | China
+Hiroshima | Japan
+Ho Chi Minh City | Vietnam
+Hong Kong | China
+Houston | USA
+Hyderabad | India
+Hyderabad | Pakistan
+Ibadan | Nigeria
+Incheon | South Korea
+Indore | India
+Irbil | Iraq
+Isfahen | Iran
+Istanbul | Turkey
+Izmir | Turkey
+Jaipur | India
+JAKARTA | Indonesia
+Jeddah | Saudi Arabia
+Jilin | China
+Jinan | China
+Jodphur | India
+Johannesburg | South Africa
+KABUL | Afghanistan
+Kaduna | Nigeria
+Kano | Nigeria
+Kanpur | India
+Kaohsiung | Taiwan
+Karachi | Pakistan
+Kawasaki | Japan
+Kazan | Russia
+Kharkiv | Ukraine
+KHARTOUM | Sudan
+Khulna | Bangladesh
+KIEV | Ukraine
+KINSHASA | Congo D.R.
+Kitakyushu | Japan
+Kobe | Japan
+Kolkata | India
+Kowloon | China
+KUALA LUMPUR | Malaysia
+Kunming | China
+Kyoto | Japan
+LA PAZ | Bolivia
+Lagos | Nigeria
+Lahore | Pakistan
+Lanzhou | China
+Leon | Mexico
+LIMA | Peru
+LONDON | UK
+Los Angeles | USA
+LUANDA | Angola
+Lubumbashi | Congo D R
+Lucknow | India
+Ludhiana | India
+Luoyang | China
+LUSAKA | Zambia
+MADRID | Spain
+Maiduguri | Nigeria
+Makassar | Indonesia
+MANAGUA | Nicaragua
+Manaus | Brazil
+MANILA | Philippines
+MAPUTO | Mozambique
+Maracaibo | Venezuela
+Mashhad | Iran
+Mecca | Saudi Arabia
+Medan | Indonesia
+Medellin | Colombia
+Medina | Saudi Arabia
+Meerut | India
+Melbourne | Australia
+Mexicali | Mexico
+MEXICO CITY | Mexico
+Milan | Italy
+MINSK | Belarus
+MOGADISHU | Somalia
+Monterrey | Mexico
+MONTEVIDEO | Uruguay
+Montreal | Canada
+MOSCOW | Russia
+Mosul | Iraq
+Multan | Pakistan
+Mumbai (Bombay) | India
+Munich | Germany
+Nagoya | Japan
+Nagpur | India
+NAIROBI | Kenya
+Nanchang | China
+Nanjing | China
+Nanning | China
+Napoli | Italy
+Nashik | India
+New York City | USA
+Nezahualcoyotl | Mexico
+Nizhny Novgorod | Russia
+Novosibirsk | Russia
+Odessa | Ukraine
+Omdurman | Sudan
+Omsk | Russia
+Osaka | Japan
+Palembang | Indonesia
+PARIS | France
+Patna | India
+Perm | Russia
+Perth | Australia
+Peshawar | Pakistan
+Philadelphia | USA
+PHNOM PENH | Cambodia
+Phoenix | USA
+Pimpri Chinchwad | India
+Port Harcourt | Nigeria
+PORT-AU-PRINCE | Haiti
+Porto Alegre | Brazil
+PRAGUE | Czech Republic
+Puebla | Mexico
+Pune | India
+PYONGYANG | North Korea
+Qingdao | China
+Qiqihar | China
+QUITO | Ecuador
+RABAT | Morocco
+Rajkot | India
+Ranchi | India
+Rawalpindi | Pakistan
+Recife | Brazil
+Rio de Janeiro | Brazil
+RIYADH | Saudi Arabia
+ROME | Italy
+Rosario | Argentina
+Rostov on Don | Russia
+Salvador | Brazil
+Samara | Russia
+San Antonio | USA
+San Diego | USA
+SANAA | Yemen
+Santa Cruz | Bolivia
+SANTIAGO | Chile
+SANTO DOMINGO | Dominican Republic
+Sao Paulo | Brazil
+Sapporo | Japan
+Semarang | Indonesia
+Sendai | Japan
+Seongnam | South Korea
+Seoul | South Korea
+Shanghai | China
+Shenyang | China
+Shenzhen | China
+Shiraz | Iran
+Shiziahuang | China
+Shubra El Kheima | Egypt
+SINGAPORE | Singapore
+SOFIA | Bulgaria
+Soweto | South Africa
+St Petersburg | Russia
+STOCKHOLM | Sweden
+Surabaya | Indonesia
+Surat | India
+Suzhou | China
+Sydney | Australia
+Tabriz | Iran
+Taichung | Taiwan
+TAIPEI | Taiwan
+Taiyuan | China
+Tangshan | China
+TASHKENT | Uzbekistan
+TBILISI | Georgia
+Tegucigalpa | Honduras
+TEHRAN | Iran
+Tianjin | China
+Tijuana | Mexico
+TOKYO | Japan
+Toronto | Canada
+TRIPOLI | Libya
+TSHWANE (PRETORIA) | South Africa
+TUNIS | Tunisia
+Ufa | Russia
+Ulsan | South Korea
+Urumqi | China
+Vadodara | India
+Valencia | Venezuela
+Varanasi | India
+VIENNA | Austria
+Volgograd | Russia
+WARSAW | Poland
+Wuhan | China
+Wuxi | China
+Xian | China
+Xuzhou | China
+Yangon | Myanmar (Burma)
+YAOUNDE | Cameroon
+Yerevan | Armenia
+Yokohama | Japan
+Zapopan | Mexico
+Zhengzhou | China
+Zibo | China
