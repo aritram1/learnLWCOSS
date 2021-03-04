@@ -6,17 +6,17 @@ export default class Typeaheadinput extends LightningElement{
         super();
         log('Typeahead input initiated');
     }
-    
+
     connectedCallback(){
-        log('Inside conntedCallback');
-        let inp = document.getElementsByClassName("typeaheadinput");//.firstChild;a
-        //inp.addEventListener('change', this.handleChange);
-        console.log(inp.classList);
+        let container = this.template.querySelector('div');
+        console.log('inside cback');
+        console.log(container);
     }
+
 
     handleChange(event){
         log('inside handlechange');
-        log(eve,t.targetvalue);
+        log(event.targetvalue);
     }
         
 }
