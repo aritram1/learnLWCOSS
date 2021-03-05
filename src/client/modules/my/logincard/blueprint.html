@@ -1,0 +1,58 @@
+<div class="container">
+    <div>
+        <div class="title">Login Card</div>
+        </br>
+
+        <div class="email">
+        <div>Email</div>
+        <input type="text" placeholder="jane@acme.com" onchange="validateEmail"/>
+        </div>
+
+        <br/>
+        <div class="password">
+        <div>Password</div>
+        <input type="password" onchange="validatePassword"/></br>
+        </div>
+
+        </br>
+        <input type="button" class="loginBtn" value="Login"/>   
+    </div>
+</div>
+
+<style>
+div{
+    font-family: Inter Light,sans-serif;
+    border: none;
+}
+input{
+    height: 12%;
+    border-radius: 3%;
+    border: none;
+}
+.container{
+    height: 30%;
+    width: 30%;
+    margin: 5%;
+    padding: 2%;
+    color: white;
+    border-radius: 4%;
+    background: linear-gradient(to bottom,  #5e31dc 0%, #3155dc 100%);
+}
+.title{
+    font-size: 150%;
+}
+.loginBtn{
+    background-color: #169e66;
+    color : white;
+    border-radius: 10%;
+    padding: 3%;
+}
+.email > div{
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.password > div{
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+</style>
