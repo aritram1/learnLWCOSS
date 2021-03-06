@@ -1,6 +1,40 @@
+div{
+    font-family: Inter Light,sans-serif;
+}
+input{
+    height: 14%;
+    border-radius: 3%;
+}
 .container{
-    height: 200px;
-    width: 200px;
-    margin: 5px;
-    background-color: blue;
+    height: 30%;
+    width: 30%;
+    margin: 5%;
+    padding: 2%;
+    color: white;
+    border-radius: 3%;
+    background: linear-gradient(to bottom,  #5e31dc 0%, #3155dc 100%);
+}
+.title{
+    font-size: 150%;
+}
+.loginBtn{
+    background-color: #169e66;
+    color : white;
+    border-radius: 5%;
+    padding: 3%;
+    border: none;
+}
+.email > div{
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.password > div{
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.password{
+    border: none;
+}
+.email{
+    border: none;
 }
